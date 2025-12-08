@@ -4,12 +4,16 @@ import { Component } from '@angular/core';
   selector: 'lab-header',
   imports: [],
   template: `
-    <p>
-      header works!
-    </p>
+    <header>
+      <nav>
+        <a [href]="">
+          {{title}}
+        </a>
+      </nav>
+    </header>
   `,
   styles: ``,
 })
 export class Header {
-
+ public readonly title = "Reserva de actividades"
 }

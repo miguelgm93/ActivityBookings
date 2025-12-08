@@ -4,12 +4,21 @@ import { Component } from '@angular/core';
   selector: 'lab-footer',
   imports: [],
   template: `
-    <p>
-      footer works!
-    </p>
+    <footer>
+      <nav>
+        <a [href]="author.url" target="_blank">
+          © 2025 {{author.name}}
+        </a>
+        <button>Aceptar cookies</button>
+      </nav> 
+</footer>
   `,
   styles: ``,
 })
 export class Footer {
+  author = {
+    name:'Miguel Guerrero',
+    url: 'https://www.alozaina.es/'
+  }
 
 }

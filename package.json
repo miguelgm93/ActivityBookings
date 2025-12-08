@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "chrome": "start chrome -incognito -auto-open-devtools-for-tabs http://localhost:4200",
-    "start": "npm run chrome && ng serve --force-esbuild",
+    "start": "npm run chrome && ng serve",
     "build": "ng build",
     "http-server": "npx http-server dist/activity-bookings/browser -c-1",
     "watch": "ng build --watch --configuration development",
@@ -34,6 +34,7 @@
     "@angular/platform-server": "^20.3.0",
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.10",
+    "@picocss/pico": "^2.1.1",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"

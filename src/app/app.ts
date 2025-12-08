@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Header } from "./core/header/header";
+import { Footer } from "./core/footer/footer";
+import { Bookings } from "./bookings/bookings/bookings";
 
 @Component({
   selector: 'lab-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Header, Footer, Bookings],
   template: `
-    <h1>Welcome to {{ title() }}!!!</h1>
-    <p>Angular works</p>
+  <lab-header/>
+    <lab-bookings/>
+    <lab-footer/>
 
     <router-outlet />
   `,
