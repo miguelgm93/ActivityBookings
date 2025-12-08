@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
 export class Footer {
   author = {
     name:'Miguel Guerrero',
-    url: 'https://www.alozaina.es/'
+    url: 'https://github.com/miguelgm93'
   }
 
 }

@@ -1,4 +1,4 @@
-export type ActivityStatus = 'draft' | 'published' | 'cancelled';
+export type ActivityStatus = 'draft' | 'published' | 'confirmed' | 'sold-out' | 'done' | 'cancelled';
 
 export type Activity = {
     id:number;
